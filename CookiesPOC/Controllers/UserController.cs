@@ -59,7 +59,7 @@ namespace CookiesPOC.Controllers
             if (Request.Cookies["UserLogin"] != null)
             {
                 var cookie = new HttpCookie("UserLogin") //here cookie is CLient side which means, when i will check REMEMBER ME
-                                                         //a cookie will be created and, later we can see admin and password have been saved
+                                                         //a cookie will be created and, later we can see in the cookie tab in inspect
                                                           
                 {
                     Expires = DateTime.Now.AddDays(-1)
