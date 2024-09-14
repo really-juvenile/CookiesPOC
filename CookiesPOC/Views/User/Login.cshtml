@@ -1,0 +1,29 @@
+﻿@using (Html.BeginForm("Login", "User", FormMethod.Post))
+{
+    <div>
+        <label>Username:</label>
+        <input type="text" name="username" />
+    </div>
+
+    <div>
+        <label>Password:</label>
+        <input type="password" name="password" />
+    </div>
+
+    <div>
+        <label>
+            <input type="checkbox" name="RememberMe" /> Remember Me
+        </label>
+    </div>
+
+    <div>
+        <input type="submit" value="Login" />
+    </div>
+}
+
+@if (ViewBag.Message != null)
+{
+    <div>
+        <p style="color: red;">@ViewBag.Message</p>
+    </div>
+}
